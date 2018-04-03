@@ -1,0 +1,245 @@
+#mapping{
+    margin-top: 250px;
+}
+#mapping img{
+
+position: absolute;
+
+z-index: 1;
+
+}
+
+
+.grid{
+
+    width: 600px;
+    height: 570px;
+    margin: 0 auto;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border : 2px solid black;
+    box-shadow: 10px 15px 5px black;
+    margin-top: 90px
+
+}
+
+
+.grid h1{
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color : black;
+    padding: 2px 0px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.grid #question{
+    text-align : center;
+    font-family: sans-serif;
+    font-size: 30px;
+    //color:#5a6772;
+
+}
+
+.buttons{
+    margin :auto;
+    margin-top: 30px;
+
+}
+
+#btn0, #btn1, #btn2, #btn3{
+  background-color: transparent;
+    width: 205px;
+    font-size: 20px;
+    color: black;
+    border : 1px solid black;
+    margin : auto;
+    margin : 10px 20px 0px 20px;
+    padding :10px 10px;
+}
+
+#score{
+
+    margin : auto;
+    margin-top: 50px;
+    text-align: center;
+}
+#progress {
+    color: #2b2b2b;
+    font-size: 35px;
+    margin-top : 15px;
+    text-align: center;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+
+}
+
+#message{
+    margin-top: 80px;
+}
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus{
+    outline : 0;
+}
+
+
+#title {
+    text-decoration: underline;
+}
+
+
+
+#flower_yellow{
+
+visibility: hidden;
+
+}
+
+
+.bg-primary {
+     height: 100vh;
+}
+
+#slidecontainer {
+    width: 100%; /* Width of the outside container */
+  	margin-top: 50px;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: transparent; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #FFFFFF; /* White background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius :50px;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #FFFFFF; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius :50px;
+}
+#test_color{
+
+    margin : auto;
+
+
+    text-align: center;
+	position: relative;
+	font-weight: 500;
+	font-size: 500%;
+	text-transform: uppercase;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+}
+
+.temperatur_page{
+	background-image: url(../img/blur-bg2.jpg)
+}
+
+.explanation{
+	text-decoration-color: black;
+	margin-top: 500px;
+}
+
+#explain{
+	margin-top: 80px;
+	color : white;
+
+}
+.cadre{
+	padding:10px 10px 10px 10px	 ;
+
+}
+
+#explanation {
+  text-align: center;
+}
+
+#detailTemperature{
+  margin-top: 20px;
+  color: white;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.imageLed{
+  width:100%;
+}
+
+a.lien1 {
+  color: black;
+}
+
+body.quizz-page{
+  background-image: url(../img/blur-bg2.jpg);
+}
+body.contact{
+  background-image: url(../img/blur-bg2.jpg);
+}
+
+#tip{
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.coucou{
+  margin-top: 200px;
+  text-align: center;
+  border : 1px solid black;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  //margin: 0 auto;
+  transition: transform .2s;
+
+}
+
+.coucou:hover{
+  transform: scale(1.2);
+}
+#profilpic{
+
+  margin-top: 20px
+}
+#text{
+
+  margin-top: 20px
+
+}
+#image{
+  border-radius: 50%;
+}
+
+#pres{
+  text-align: center;
+}

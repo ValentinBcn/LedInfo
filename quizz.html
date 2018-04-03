@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	  <title>Creative - Start Bootstrap Theme</title>
+  <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"> </script>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.maphilight.min.js"></script>
+
+</head>
+<body class="quizz-page">
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">LED INFO</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="temperature.html">Temperature </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="operation.html">Operation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="quizz.html">Quizz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class='grid'>
+
+
+  			<div id='quiz'>
+  				<h1> QUIZ  </h1>
+  				<hr style = "margin-bottom:20px; background-color:black">
+
+
+  				<p id ="question">  </p>
+  				<div class = "buttons">
+
+  					<button id = "btn0"><span id = "choice0"></span></button>
+  					<button id = "btn1"><span id = "choice1"></span></button>
+  					<button id = "btn2"><span id = "choice2"></span></button>
+  					<button id = "btn3"><span id = "choice3"></span></button>
+
+  				</div>
+					<br>
+						<hr style = "margin-bottom:20px; background-color:black">
+  				<footer>
+  					<p id = "progress"> blabla </p>
+
+  				</footer>
+  			</div>
+
+    </div>
+		<div class = "row">
+			<div class="cadre offset-md-3 col-md-6" id="tip">
+				<br> <br>
+				<h2 style = "color : black;">Improve your score ! study
+				<a href="https://en.wikipedia.org/wiki/Light-emitting_diode" style = "color:red"> here </a>
+				 </h2>
+			</img>
+			</div>
+		</div>
+    <script type="text/javascript" src='questions.json'></script>
+	<script type='text/javascript' src='jsquiz.js'></script>
+
+    <script type="text/javascript" src='question.js'></script>
+    <script type="text/javascript" src='quiz_controller.js'> </script>
+    <script type="text/javascript" src='app.js'></script>
+
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+</html>

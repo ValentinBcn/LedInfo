@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/roundslider.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+<body class="temperatur_page">
+
+<div id="page-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand "  href="index.html">LED INFO</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="temperature.html">Temperature </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="operation.html">Operation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="quizz.html">Quizz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+</div>
+	<div id="explain" class="row">
+		<div class="offset-md-3 col-md-6" id="explanation">
+			<h2>Hey, try to move the circle below this text </h2>
+		</div>
+	</div>
+
+
+
+	<div id="slidecontainer" class="row">
+
+			<div class="offset-md-3 col-md-6">
+  			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  		</div>
+
+	</div>
+
+	<div class="row">
+
+			<div class="cadre offset-md-3 col-md-6" id="test_color">
+			</div>
+
+	</div>
+
+	<div class = "row">
+		<div class="cadre offset-md-3 col-md-6" id="image">
+			<img src= ./img/ledColor.jpg class="imageLed">
+		</img>
+		</div>
+	</div>
+	<div id="detailTemperature" class="row">
+		<div class="cadre offset-md-3 col-md-6" >
+				The color temperature of a light source is the temperature of an
+			 ideal black-body radiator that radiates light of a color comparable
+			  to that of the light source. Color temperature is a characteristic of
+				 visible light that has important applications in lighting, photography,
+				  videography, publishing, manufacturing, astrophysics, horticulture,
+					 and other fields. In practice, color temperature is meaningful only
+					 for light sources that do in fact correspond somewhat closely to the
+					  radiation of some black body, those on a line from
+						 reddish/orange via yellow and more or less white to blueish white;
+						  it does not make sense to speak of the color temperature of, e.g.,
+							 a green or a purple light. Color temperature is conventionally
+							  expressed in kelvin, using the symbol K, a unit of measure for
+								absolute temperature.<br><br>
+
+								For more informations you can visit
+								<a class="lien1" href="https://en.wikipedia.org/wiki/Color_temperature">this link</a>
+
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+
+
+
+		var slider = document.getElementById("myRange");
+
+		var output = document.getElementById("test_color");
+
+		var theColor = "";
+  		if ( slider.value < 50 ) {
+			    myRed = 255;
+			    myGreen = parseInt(  ( slider.value * 2.42 ) +134 );
+			    myBlue = parseInt ((	slider.value * 5.1 )  )
+			  }
+	 	 else 	{
+			    myRed = parseInt( ( ( slider.value ) * -1.28 ) + 319 );
+			    myGreen = parseInt( ( ( slider.value ) * -0.82 ) +296 );
+			    myBlue = parseInt( ( ( slider.value ) * 0.12 ) + 249 );
+		 	 }
+	  	theColor = "rgb(" + myRed + "," + myGreen + "," + myBlue + ")";
+
+	  	if (isNaN(this.value)){this.value = slider.value ;}
+		output.innerHTML = (this.value*111.11)+1000 + " Kelvin ";
+
+
+
+
+
+
+		document.getElementById("test_color").style.backgroundColor = theColor;
+
+	 // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+
+	slider.oninput = function() {
+
+	  	output.innerHTML = (this.value*111)+1000 + " Kelvin";
+
+
+	    var theColor = "";
+  		if ( slider.value <50 ) {
+			    myRed = 255;
+			    myGreen = parseInt(  ( slider.value * 2.42 ) +134 );
+			    myBlue = parseInt ((	slider.value * 5.1 )  )
+			  }
+	 	 else 	{
+			    myRed = parseInt( ( ( slider.value ) * -1.28 ) +319 );
+			    myGreen = parseInt( ( ( slider.value ) * -0.82 ) +296 );
+			    myBlue = parseInt( ( ( slider.value ) * 0.12 ) + 249 );
+		 	 }
+	  	theColor = "rgb(" + myRed + "," + myGreen + "," + myBlue + ")";
+
+
+
+		document.getElementById("test_color").style.backgroundColor = theColor;
+	}
+
+	</script>
+	<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+</body>
+</html>
