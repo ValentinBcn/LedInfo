@@ -27,11 +27,11 @@
 		$('.map').maphilight();
 	});</script>
 </head>
-<body>
+<body background = "img/background_operation.jpg" >
 
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">LED INFO</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">LED INFO</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,38 +46,131 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="quizz.html">Quizz</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
+          
           </ul>
         </div>
       </div>
     </nav>
+    <div style="margin-top: 150px; margin-bottom:100px">
+       <center><h2> Here is a little game to improve your aknowledge on the led, drag your mouse over the scheme ...</h2></center> 
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <img class="img-responsive" src="LedResize.png" usemap="#image-map" >
+      </div>
 
-<img class="map" src="sitemap.jpg" width="960" height="593" usemap="#usa">
-<map name="usa">
+      <div class="col-7">
 
-<area id="one" href="#" title="SC" shape="circle" coords="275,293,96" onmouseover="bigImg()" onmouseout="normalImg()"  alt="flower_yellow"  target="flower_yellow">
+        <div id="thick_headed" style="visibility: hidden"> <h1>Epoxy  </h1> <p>The epoxy lens has three major functions.
+           First, it is designed to allow most of the light to escape from the semiconductor. Second, it focuses the light 
+           (view angle) and lastly, it protects the LED semiconductor from outside elements. <br>The epoxy totally embeds the
+            entire unit which makes the LED virtually indestructible. There are no loose or moving parts within the solid
+             epoxy enclosure. Non-diffused lenses that do not have glass particles in the epoxy produce a narrow viewing 
+             angle of +/-12 degrees from the centre. </p> </div>
+
+        <div id="anvil" style="visibility: hidden">  <h1>Anvil</h1> <p>The anvil, serves not only as one of the electrical contacts,
+           but also to physically hold the chip, provide some heat-sinking, and provide some directivity to the emitted light
+            (the chip usually sits in a cup-shaped depression). </p> </div>
+
+        <div id="cowl" style="visibility: hidden"> <h1>Post</h1> <p>There are two leads of an LED that are used to supply input voltage.
+           The longer lead is positive and known as Post, and the smaller is negative known as Anvil. So basically, the anvil and the post
+            determines the polarity of the two the leads. </p> </div>
 
 
+        <div id="flat" style="visibility: hidden">  <h1>Flat Spot</h1> <p> Only a flat spot, its purpose is to maintain the lens/case </p> </div>
+        <div id="anode" style="visibility: hidden">  <h1>Anode</h1> <p>An anode is an electrode through which the conventional current is entering
+           into a polarized electrical device.  </p> </div>
+        <div id="cathode" style="visibility: hidden">  <h1>Cathode</h1> <p>A cathode is the electrode from which a conventional current leaves 
+          a polarized electrical device. </p> </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+<map name="image-map">
+    <area target="thickHeaded" alt="Epoxy Lens" title="Epoxy Lens"  href=""  onmouseover="showthickhead()" onmouseout="hidethickhead()"coords="149,109,447,112,428,81,409,59,389,41,360,29,316,17,280,19,232,29,196,52,172,76" shape="poly">
+
+    <area target="" alt="anvil" title="Anvil" href=""  onmouseover="showanvil()" onmouseout="hideanvil()" coords="266,114,324,153,319,169,306,192,301,219,300,321,332,382,407,386,409,116" shape="poly">
+    <area target="" alt="cowl" title="Post" href=""  onmouseover="showcowl()" onmouseout="hidecowl()" coords="202,122,197,175,197,383,246,388,248,182,285,171,279,144,226,120" shape="poly">
+    <area target="" alt="flat" title="flat" href=""  onmouseover="showflat()" onmouseout="hideflat()"coords="79,390,78,471,482,469,482,390" shape="poly">
+    <area target="" alt="anode" title="anode" href=""  onmouseover="showanode()" onmouseout="hideanode()"coords="199,477,203,826,245,824,249,473" shape="poly">
+    <area target="" alt="cathode" title="cathode" href="" onmouseover="showcathode()" onmouseout="hidecathode()" coords="329,472,332,726,380,725,384,474" shape="poly">
 </map>
 
- <h1 id="flower_yellow"> coucou ceci est du texte </h1>
+
+
+
   
     
   
  <script type="text/javascript">
-      function bigImg() {
-       var flower_yellow = document.getElementById('flower_yellow');
-       flower_yellow.style.visibility = 'visible';
-     
-      }
 
-      function normalImg() {
-       var flower_yellow = document.getElementById('flower_yellow');
-       flower_yellow.style.visibility = 'hidden';
-     
+    function showthickhead() {
+       var elmt = document.getElementById('thick_headed');
+      elmt.style.visibility = 'visible';
+    }
+
+    function hidethickhead() {
+       var elmt = document.getElementById('thick_headed');
+      elmt.style.visibility = 'hidden';
       }
+///////////////////////////////////////////////*********///////////////////////
+      function showanvil() {
+       var elmt = document.getElementById('anvil');
+      elmt.style.visibility = 'visible';
+    }
+
+    function hideanvil() {
+       var elmt = document.getElementById('anvil');
+      elmt.style.visibility = 'hidden';
+      }
+      ///////////////////////////////////////////////*********///////////////////////
+      function showcowl() {
+       var elmt = document.getElementById('cowl');
+      elmt.style.visibility = 'visible';
+    }
+
+    function hidecowl() {
+       var elmt = document.getElementById('cowl');
+      elmt.style.visibility = 'hidden';
+      }
+      ///////////////////////////////////////////////*********///////////////////////
+      function showflat() {
+       var elmt = document.getElementById('flat');
+      elmt.style.visibility = 'visible';
+    }
+
+    function hideflat() {
+       var elmt = document.getElementById('flat');
+      elmt.style.visibility = 'hidden';
+      }
+      ///////////////////////////////////////////////*********///////////////////////
+      function showanode() {
+       var elmt = document.getElementById('anode');
+      elmt.style.visibility = 'visible';
+    }
+
+    function hideanode() {
+       var elmt = document.getElementById('anode');
+      elmt.style.visibility = 'hidden';
+      }
+      ///////////////////////////////////////////////*********///////////////////////
+      function showcathode() {
+       var elmt = document.getElementById('cathode');
+      elmt.style.visibility = 'visible';
+    }
+
+    function hidecathode() {
+       var elmt = document.getElementById('cathode');
+      elmt.style.visibility = 'hidden';
+      }
+      ///////////////////////////////////////////////*********///////////////////////
+     
+     
 
       var flower = document.getElementById('one');
  
@@ -93,6 +186,5 @@
 
  </script>
     
-<a href="./">Back to the index</a>
 </body>
 </html>
